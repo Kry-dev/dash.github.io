@@ -1,0 +1,21 @@
+extends layouts/default
+include helpers/mixins
+
+block variables
+    - const title = "Resident Profile"
+block content
+    include ../blocks/modules/header/header
+    .content-wrapper
+        include ../blocks/modules/footer/footer
+    // Scroll to Top Button
+    include ../blocks/modules/scroll-top/scroll-top
+
+    // Logout Modal
+    include ../blocks/modules/modal/modal
+
+
+
+block scripts
+    script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous")
+    script(src="js/main.js")
+    //script(src="js/vendor.js")
