@@ -1,0 +1,101 @@
+.row
+    .col-lg-6
+        .card.card-info
+            .card-header
+                ul#myTab.nav.nav-tabs(role='tablist')
+                    li.nav-item(role='presentation')
+                        a#fileInfo-tab.nav-link.active(data-bs-toggle='tab' href='#fileInfo' role='tab' aria-controls='file info' aria-selected='true') File info
+                            i.fa.fa-fw.fa-pencil-square-o(aria-hidden="true")
+                    li.nav-item(role='presentation')
+                        a#dates-tab.nav-link(data-bs-toggle='tab' href='#dates' role='tab' aria-controls='Dates' aria-selected='false') Dates
+                            i.fa.fa-fw.fa-pencil-square-o(aria-hidden="true")
+                    li.nav-item(role='presentation')
+                        a#stateApplication-tab.nav-link(data-bs-toggle='tab' href='#stateApplication' role='tab' aria-controls='State Application' aria-selected='false') State Application
+                            i.fa.fa-fw.fa-pencil-square-o(aria-hidden="true")
+            .card-body
+                #myTabContent.tab-content
+                    #fileInfo.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='fileInfo-tab')
+                        .row
+                            .infolist.col
+                                .infolist-item
+                                    span.infolist-item__name File type
+                                    span.infolist-item__val Leareet et.
+                                .infolist-item
+                                    span.infolist-item__name Status
+                                    span.infolist-item__val Lectus dui.
+                                .infolist-item
+                                    span.infolist-item__name Internal Status
+                                    span.infolist-item__val Lobortis mattis.
+                            .infolist.col
+                                .infolist-item
+                                    span.infolist-item__name Rep
+                                    span.infolist-item__val Convallis phasellus.
+                                .infolist-item
+                                    span.infolist-item__name Processor
+                                    span.infolist-item__val Et quam.
+                                .infolist-item
+                                    span.infolist-item__name File Age
+                                    span.infolist-item__val Integer uitrices at..
+                    #dates.tab-pane.fade(role='tabpanel' aria-labelledby='dates-tab')
+                        .row
+                            .infolist.col-4
+                                .infolist-item
+                                    span.infolist-item__name File Create
+                                    span.infolist-item__val 08/02/2020
+                                .infolist-item
+                                    span.infolist-item__name Rep Handoff
+                                    span.infolist-item__val 08/02/2020
+                                .infolist-item
+                                    span.infolist-item__name Next Significant
+                                    span.infolist-item__val 08/02/2020
+                            .infolist.col-8
+                                .infolist-item
+                                    span.infolist-item__name Medicaid Needed
+                                    span.infolist-item__val 08/02/2020
+                                .infolist-item
+                                    span.infolist-item__name Coverage Possible
+                                    span.infolist-item__val 08/02/2020
+                                .infolist-item.w-50
+                                    span.infolist-item__name Approved
+                                    span.infolist-item__val 08/02/2020
+                                .infolist-item.w-50
+                                    span.infolist-item__name Closed
+                                    span.infolist-item__val 08/02/2020
+                    #stateApplication.tab-pane.fade(role='tabpanel' aria-labelledby='stateApplication-tab')
+                        .row
+                            .infolist.col
+                                .infolist-item
+                                    span.infolist-item__name Case Number
+                                    span.infolist-item__val 123456789
+                                .infolist-item
+                                    span.infolist-item__name Medicaid Number
+                                    span.infolist-item__val 987654321
+                                .infolist-item
+                                    span.infolist-item__name State App Number
+                                    span.infolist-item__val 987654321
+                            .infolist.col
+                                .infolist-item
+                                    span.infolist-item__name Web Username jresident
+                                    span.infolist-item__val jresident 123
+                                .infolist-item
+                                    span.infolist-item__name Web Password
+                                    span.infolist-item__val x7S89FF328
+                                .infolist-item
+                                    span.infolist-item__name State App Date
+                                    span.infolist-item__val 08/20/2020
+
+    .col-lg-6
+        .card.text-center
+            .card-header
+                ul.nav.nav-tabs.card-header-tabs
+                    li.nav-item
+                        a.nav-link.active(aria-current='true' href='#') Active
+                    li.nav-item
+                        a.nav-link(href='#') Link
+                    li.nav-item
+                        a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+            .card-body
+                h5.card-title Special title treatment
+                p.card-text With supporting text below as a natural lead-in to additional content.
+                a.btn.btn-primary(href='#') Go somewhere
+

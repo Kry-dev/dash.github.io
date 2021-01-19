@@ -4,9 +4,11 @@ include helpers/mixins
 block variables
     - const title = "Resident Profile"
 block content
-    include ../blocks/modules/header/header
+    //include ../blocks/modules/header/header
     .content-wrapper
-        include ../blocks/modules/footer/footer
+        .container-fluid
+            include ../blocks/modules/info-cards/info-cards
+            include ../blocks/modules/footer/footer
     // Scroll to Top Button
     include ../blocks/modules/scroll-top/scroll-top
 

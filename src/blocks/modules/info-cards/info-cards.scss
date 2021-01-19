@@ -1,0 +1,81 @@
+.card {
+    min-height: 5.625rem;
+    &-info {
+        
+        background: $white;
+        .card-header {
+            background: transparent;
+            border-bottom: 0;
+            padding: 0 2rem 0;
+        }
+        .card-body {
+            padding: 1rem 2rem 2rem;
+        }
+        .nav-tabs {
+            justify-content: space-between;
+        }
+      
+        .nav-link {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            //width: 100%;
+            border: 0;
+            padding: 1rem 2rem;
+            color: $gray-700;
+            &.active {
+                border-bottom: 1px solid $dark;
+                color: $dark;
+                font-weight: 700;
+            }
+            .fa {
+                margin-left: .5rem;
+                font-size: 20px;
+            }
+        }
+    }
+    .infolist {
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        &-item {
+            display: inline-flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px dashed $border-color;
+            font-size: 14px;
+            background: $white;
+            width: 100%;
+            &.w-50 + .infolist-item.w-50 {
+                margin-left: auto;
+            }
+            &__name, &__val {
+                line-height: 1.25;
+                background: $white;
+                margin-bottom: -2px;
+            }
+            &__name {
+                color: $gray-700;
+            }
+            &__val {
+                color: $dark;
+            }
+            
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &.w-50 {
+                width: 48% !important;
+            }
+        }
+        &-item + .infolist-item {
+            margin-top: 1rem;
+        }
+    }
+}
+

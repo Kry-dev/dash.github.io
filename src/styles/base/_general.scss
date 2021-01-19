@@ -9,24 +9,70 @@ html {
 }
 
 body {
+    @include media-breakpoint-up(md) {
+        &.sidenav-toggled .content-wrapper {
+            margin-left: 55px;
+        }
+    }
     overflow-x: hidden;
     &.sticky-footer {
-        margin-bottom: 56px;
+        //margin-bottom: 56px;
     }
     &.sticky-footer .content-wrapper {
-        min-height: calc(100vh - 56px - 56px);
+        //min-height: calc(100vh - 56px - 56px);
+        min-height: 100vh;
     }
     &.fixed-nav {
-        padding-top: 56px;
+        //padding-top: 56px;
+    }
+    &.sidenav-toggled #mainNav.fixed-top .sidenav-toggler {
+        overflow-x: hidden;
+        width: 55px;
+        .nav-item, .nav-link {
+            width: 55px !important;
+        }
+    }
+   
+    
+    &.sidenav-toggled #mainNav.fixed-top, &.sidenav-toggled #mainNav.static-top {
+        #sidenavToggler i {
+            transform: scaleX(-1);
+            -ms-filter: "FlipH";
+            filter: fliph;
+        }
+    }
+    
+    &.sidenav-toggled .navbar-sidenav {
+        width: 55px;
+        .nav-link-text {
+            display: none;
+        }
+        .nav-item, .nav-link {
+            width: 55px !important;
+            &:after {
+                display: none;
+            }
+        }
+    }
+    
+    &.sidenav-toggled .navbar-sidenav .nav-item {
+        white-space: nowrap;
+    }
+    
+    &.sidenav-toggled .navbar-sidenav-tooltip.show {
+        display: flex;
     }
 }
 
 .content-wrapper {
+    @include media-breakpoint-up(md) {
+        margin-left: 250px;
+    }
     min-height: calc(100vh - 56px);
     padding-top: 1rem;
+    overflow-x: hidden;
+    background: white;
 }
-
-
 
 .smaller {
     font-size: 0.7rem;
@@ -51,24 +97,23 @@ body {
     top: -25px;
     right: -25px;
     font-size: 5rem;
-    -webkit-transform: rotate(15deg);
-    -ms-transform: rotate(15deg);
     transform: rotate(15deg);
 }
 
-@media (min-width: 576px) {
+@include media-breakpoint-up(xs) {
     .card-columns {
         column-count: 1;
     }
 }
 
-@media (min-width: 768px) {
+
+@include media-breakpoint-up(sm) {
     .card-columns {
         column-count: 2;
     }
 }
 
-@media (min-width: 1200px) {
+@include media-breakpoint-up(xl) {
     .card-columns {
         column-count: 2;
     }

@@ -1,69 +1,86 @@
-ul#exampleAccordion.navbar-nav.navbar-sidenav
-    li.nav-item(data-bs-toggle='tooltip' data-placement='right' title='Dashboard')
-        a.nav-link(href='index.html')
-            i.fa.fa-fw.fa-dashboard
-            span.nav-link-text Dashboard
-        .sidenav-btn
-            i.fa.fa-fw.fa-search
-    li.nav-item(data-bs-toggle='tooltip' data-placement='right' title='Charts')
-        a.nav-link(href='charts.html')
-            i.fa.fa-fw.fa-area-chart
-            span.nav-link-text Charts
-        .sidenav-btn
-            i.fa.fa-fw.fa-search
-    li.nav-item(data-bs-toggle='tooltip' data-placement='right' title='Tables')
-        a.nav-link(href='tables.html')
-            i.fa.fa-fw.fa-table
-            span.nav-link-text Tables
-        .sidenav-btn
-            i.fa.fa-fw.fa-search
-    li.nav-item(data-bs-toggle='tooltip' data-placement='right' title='Components')
-        a.nav-link.nav-link-collapse.collapsed(data-bs-toggle='collapse' href='#collapseComponents' data-parent='#exampleAccordion')
-            i.fa.fa-fw.fa-wrench
-            span.nav-link-text Components
-        ul#collapseComponents.sidenav-second-level.collapse
-            li
-                a(href='navbar.html') Navbar
-            li
-                a(href='cards.html') Cards
-        .sidenav-btn
-            i.fa.fa-fw.fa-search
-    li.nav-item(data-bs-toggle='tooltip' data-placement='right' title='Example Pages')
-        a.nav-link.nav-link-collapse.collapsed(data-bs-toggle='collapse' href='#collapseExamplePages' data-parent='#exampleAccordion')
-            i.fa.fa-fw.fa-file
-            span.nav-link-text Example Pages
-        ul#collapseExamplePages.sidenav-second-level.collapse
-            li
-                a(href='login.html') Login Page
-            li
-                a(href='register.html') Registration Page
-            li
-                a(href='forgot-password.html') Forgot Password Page
-            li
-                a(href='blank.html') Blank Page
-        .sidenav-btn
-            i.fa.fa-fw.fa-search
-    li.nav-item(data-bs-toggle='tooltip' data-placement='right' title='Menu Levels')
-        a.nav-link.nav-link-collapse.collapsed(data-bs-toggle='collapse' href='#collapseMulti' data-parent='#exampleAccordion')
-            i.fa.fa-fw.fa-sitemap
-            span.nav-link-text Menu Levels
-        ul#collapseMulti.sidenav-second-level.collapse
-            li
-                a(href='#') Second Level Item
-            li
-                a(href='#') Second Level Item
-            li
-                a(href='#') Second Level Item
-            li
-                a.nav-link-collapse.collapsed(data-bs-toggle='collapse' href='#collapseMulti2') Third Level
-                ul#collapseMulti2.sidenav-third-level.collapse
-                    li
-                        a(href='#') Third Level Item
-                    li
-                        a(href='#') Third Level Item
-                    li
-                        a(href='#') Third Level Item
-    li.nav-item(data-bs-toggle='tooltip' data-placement='right' title='Link')
+ul#sidebar.navbar-nav.navbar-sidenav
+    li.profile-name
+        h3 Joe Resident
+        p.my-0 File #1001001
+    li.nav-item(data-bs-toggle='tooltip' data-placement='right' title='Resident Profile')
+        a.nav-link( data-bs-toggle="collapse" href="#resident" role="button" aria-expanded="false" aria-controls="collapseResident")
+            i.fa.fa-fw.fa-user-o(aria-hidden="true")
+            span.nav-link-text Resident Profile
+        button.sidenav-btn
+            i.fa.fa-fw.fa-pencil-square-o(aria-hidden="true")
+        .collapse.show#resident
+            form.form.sidenav-from
+                .row.mb-4
+                    .col
+                        label.form-label SS#
+                        input.form-control(type='text' placeholder='XXX-XX-6787' aria-label='SS#' value="XXX-XX-6787", disabled="")
+                    .col
+                        label.form-label DOB
+                        input.form-control(type='text' value="01/01/1944" placeholder='01/01/1944' aria-label='DOB' , disabled="disabled")
+                .row
+                    .col
+                        label.form-label Age
+                        input.form-control(type='text' placeholder='age' aria-label='Age' value="76", disabled="disabled")
+                    .col
+                        label.form-label Gender
+                        input.form-control(type='text' value="M" placeholder='M' aria-label='Gender', disabled="disabled")
+                .row
+                    .col
+                        label.form-label Facility State
+                        input.form-control(type='text' placeholder='FL' aria-label='Facility State' value="FL", disabled="disabled")
+                    .col
+                        label.form-label Facility County
+                        input.form-control(type='text' value="Hillsborough" placeholder='Hillsborough' aria-label='Facility County', disabled="disabled")
+                .row
+                    .col
+                        label.form-label Facility
+                        input.form-control(type='text' value="Avante of Orlando" placeholder='Avante of Orlando' aria-label='Facility', disabled="disabled")
+                .row.mb-4
+                    .col
+                        label.form-label Original Address
+                        input.form-control(type='text' value="123 Main St, Tampa, FL 33615" placeholder='123 Main St, Tampa, FL 33615' aria-label='Original Address', disabled="disabled")
+
+    li.nav-item(data-bs-toggle='tooltip' data-placement='right' title='Additional Info')
         a.nav-link(href='#')
-            i.fa.fa-fw.fa-link
-            span.nav-link-text Link
+            i.fa.fa-fw.fa-info-circle(aria-hidden="true")
+            span.nav-link-text Additional Info
+        button.sidenav-btn
+            i.fa.fa-fw.fa-pencil-square-o(aria-hidden="true")
+    li.nav-item(data-bs-toggle='tooltip' data-placement='right' title='Resident Status')
+        a.nav-link(href='#')
+            i.fa.fa-fw.fa-plus-circle(aria-hidden="true")
+            span.nav-link-text Resident Status
+        button.sidenav-btn
+            i.fa.fa-fw.fa-pencil-square-o(aria-hidden="true")
+    li.nav-item(data-bs-toggle='tooltip' data-placement='right' title='Contacts')
+        a.nav-link(href='#')
+            i.fa.fa-fw.fa-address-book-o(aria-hidden="true")
+            span.nav-link-text Contacts
+        button.sidenav-btn
+            i.fa.fa-fw.fa-plus-square-o(aria-hidden="true")
+    li.nav-item(data-bs-toggle='tooltip' data-placement='right' title='Notes')
+        a.nav-link(href='#')
+            i.fa.fa-fw.fa-file-text-o(aria-hidden="true")
+            span.nav-link-text Notes
+        button.sidenav-btn
+            i.fa.fa-fw.fa-search(aria-hidden="true")
+    li.nav-item(data-bs-toggle='tooltip' data-placement='right' title='Documents')
+        a.nav-link(href='#')
+            i.fa.fa-fw.fa-file-o(aria-hidden="true")
+            span.nav-link-text Documents
+        button.sidenav-btn
+            i.fa.fa-fw.fa-search(aria-hidden="true")
+    li.nav-item(data-bs-toggle='tooltip' data-placement='right' title='FIA Requests')
+        a.nav-link(href='#')
+            i.fa.fa-fw.fa-question-circle-o(aria-hidden="true")
+            span.nav-link-text FIA Requests
+        button.sidenav-btn
+            i.fa.fa-fw.fa-search(aria-hidden="true")
+    li.nav-item(data-bs-toggle='tooltip' data-placement='right' title='History')
+        a.nav-link(href='#')
+            i.fa.fa-fw.fa-history(aria-hidden="true")
+            span.nav-link-text History
+        button.sidenav-btn
+            i.fa.fa-fw.fa-plus-square-o(aria-hidden="true")
+
+
