@@ -29,11 +29,10 @@ h5 Property
                     label.form-check-label(for='SpousePropertyNo')
                         | No
 //end of Assets Property
-//end of VA Benefits
 
-//Other Income
+//Assets Property Table
 .row
-    table.table.table-sm.table-striped.table-bordered
+    table.table.table-sm.table-striped.table-bordered.align-middle
         thead
             tr
                 th Type
@@ -46,16 +45,16 @@ h5 Property
         tbody
             tr
                 td
-                    select#incomeType.form-select
+                    select#propertyType.form-select
                         option(selected='') Homestead
                         option Option 1
                         option Option 2
                         option Option 3
 
                 td
-                    input#IncomeDescription.form-control(type="text" placeholder="Description")
+                    input#propertyDescription.form-control(type="text" placeholder="Description")
                 td
-                    select#incomeOwner.form-select
+                    select#propertyOwner.form-select
                         option(selected='') Resident
                         option Option 1
                         option Option 2
@@ -64,7 +63,7 @@ h5 Property
                     .input-group
                         .input-group-text
                             i.fa.fa-usd
-                        input#IncomeAmount.form-control(type="text", placeholder="Volue")
+                        input#propertyAmount.form-control(type="text", placeholder="Volue")
                 td
                     .d-flex.flex-row.py-2
                         .form-check
@@ -86,7 +85,114 @@ h5 Property
                             input#PropertyVerifiedNo.form-check-input(type='radio' name='PropertyVerifiedYesNo' value='option2' )
                             label.form-check-label(for='PropertyVerifiedNo')
                                 | No
-                td
-                    a.btn
+                td.actions
+                    a.btn.text-right
                         i.fa.fa-trash-o.text-danger
-//end of Other Income
+//end of Assets Property Table
+
+//Assets Vehicles
+h5 Vehicles
+    a.btn
+        i.fa.fa-plus-square-o
+.row.mb-3
+    .col-auto
+        label.form-label Does the resident own any vehicles?
+        .d-flex
+            .form-check
+                input#ResidentVehiclesYes.form-check-input(type='radio' name='ResidentVehiclesYesNO' value='option1' checked='')
+                label.form-check-label(for='ResidentVehiclesYes')
+                    | Yes
+            .form-check.ms-3
+                input#ResidentVehiclesNo.form-check-input(type='radio' name='ResidentVehiclesYesNO' value='option2' )
+                label.form-check-label(for='ResidentVehiclesNo')
+                    | No
+
+
+    .col-auto
+        label.form-label Does the spouse solely own any vehicles?
+        .row.mb-1
+            .d-flex
+                .form-check
+                    input#SpouseVehiclesYes.form-check-input(type='radio' name='SpouseVehiclesYesNO' value='option1' checked='')
+                    label.form-check-label(for='SpouseVehiclesYes')
+                        | Yes
+                .form-check.ms-3
+                    input#SpouseVehiclesNo.form-check-input(type='radio' name='SpouseVehiclesYesNO' value='option2' )
+                    label.form-check-label(for='SpouseVehiclesNo')
+                        | No
+//end of Assets Vehicles
+
+//Assets Vehicles Table
+.row
+    table.table.table-sm.table-striped.table-bordered.align-middle
+        thead
+            tr
+                th Type
+                th Year
+                th Make
+                th Model
+                th Owner
+                th Volue
+                th Registered
+                th Exempt
+                th Verified?
+                th
+
+        tbody
+            tr
+                td
+                    select#incomeType.form-select
+                        option(selected='') Automobile
+                        option Option 1
+                        option Option 2
+                        option Option 3
+
+                td
+                    input.form-control(type="text" placeholder="yyyy")
+                td
+                    input.form-control(type="text" placeholder="make")
+                td
+                    input.form-control(type="text" placeholder="type")
+                td
+                    select#incomeOwner.form-select
+                        option(selected='') Resident
+                        option Option 1
+                        option Option 2
+                        option Option 3
+                td
+                    .input-group
+                        .input-group-text
+                            i.fa.fa-usd
+                        input#IncomeAmount.form-control(type="text", placeholder="Volue")
+                td
+                    .form-check
+                        input#VehiclesRegisteredYes.form-check-input(type='radio' name='VehiclesRegisteredYesNo' value='option1' checked='')
+                        label.form-check-label(for='VehiclesRegisteredYes')
+                            | Yes
+                    .form-check
+                        input#VehiclesRegisteredNo.form-check-input(type='radio' name='VehiclesRegisteredYesNo' value='option2' )
+                        label.form-check-label(for='VehiclesRegisteredNo')
+                            | No
+                td
+                    .form-check
+                        input#VehiclesExemptYes.form-check-input(type='radio' name='VehiclesExemptYesNo' value='option1' checked='')
+                        label.form-check-label(for='VehiclesExemptYes')
+                            | Yes
+                    .form-check
+                        input#VehiclesExemptNo.form-check-input(type='radio' name='VehiclesExemptYesNo' value='option2' )
+                        label.form-check-label(for='VehiclesExemptNo')
+                            | No
+                td
+                    .form-check
+                        input#VehiclesVerifiedYes.form-check-input(type='radio' name='VehiclesVerifiedYesNo' value='option1' checked='')
+                        label.form-check-label(for='VehiclesVerifiedYes')
+                            | Yes
+                    .form-check
+                        input#VehiclesVerifiedNo.form-check-input(type='radio' name='VehiclesVerifiedYesNo' value='option2' )
+                        label.form-check-label(for='VehiclesVerifiedNo')
+                            | No
+                td.actions
+                    a.btn.text-right
+                        i.fa.fa-trash-o.text-danger
+//end of Assets Property Table
+
