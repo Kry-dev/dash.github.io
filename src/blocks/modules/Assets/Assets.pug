@@ -1,0 +1,92 @@
+//Assets Property
+h5 Property
+    a.btn
+        i.fa.fa-plus-square-o
+.row.mb-3
+    .col-auto
+        label.form-label Does the resident own any property?
+        .d-flex
+            .form-check
+                input#ResidentPropertyYes.form-check-input(type='radio' name='ResidentPropertyYesNO' value='option1' checked='')
+                label.form-check-label(for='ResidentPropertyYes')
+                    | Yes
+            .form-check.ms-3
+                input#ResidentPropertyNo.form-check-input(type='radio' name='ResidentPropertyYesNO' value='option2' )
+                label.form-check-label(for='ResidentPropertyNo')
+                    | No
+
+
+    .col-auto
+        label.form-label Does the spouse solely own any property?
+        .row.mb-1
+            .d-flex
+                .form-check
+                    input#SpousePropertyYes.form-check-input(type='radio' name='SpousePropertyYesNO' value='option1' checked='')
+                    label.form-check-label(for='SpousePropertyYes')
+                        | Yes
+                .form-check.ms-3
+                    input#SpousePropertyNo.form-check-input(type='radio' name='SpousePropertyYesNO' value='option2' )
+                    label.form-check-label(for='SpousePropertyNo')
+                        | No
+//end of Assets Property
+//end of VA Benefits
+
+//Other Income
+.row
+    table.table.table-sm.table-striped.table-bordered
+        thead
+            tr
+                th Type
+                th Description
+                th Owner
+                th Volue
+                th Exempt
+                th Verified?
+                th
+        tbody
+            tr
+                td
+                    select#incomeType.form-select
+                        option(selected='') Homestead
+                        option Option 1
+                        option Option 2
+                        option Option 3
+
+                td
+                    input#IncomeDescription.form-control(type="text" placeholder="Description")
+                td
+                    select#incomeOwner.form-select
+                        option(selected='') Resident
+                        option Option 1
+                        option Option 2
+                        option Option 3
+                td
+                    .input-group
+                        .input-group-text
+                            i.fa.fa-usd
+                        input#IncomeAmount.form-control(type="text", placeholder="Volue")
+                td
+                    .d-flex.flex-row.py-2
+                        .form-check
+                            input#PropertyExemptYes.form-check-input(type='radio' name='PropertyExemptYesNo' value='option1' checked='')
+                            label.form-check-label(for='PropertyExemptYes')
+                                | Yes
+                        .form-check.ms-3
+                            input#PropertyExemptNo.form-check-input(type='radio' name='PropertyExemptYesNo' value='option2' )
+                            label.form-check-label(for='PropertyExemptNo')
+                                | No
+
+                td
+                    .d-flex.flex-row.py-2
+                        .form-check
+                            input#PropertyVerifiedYes.form-check-input(type='radio' name='PropertyVerifiedYesNo' value='option1' checked='')
+                            label.form-check-label(for='PropertyVerifiedYes')
+                                | Yes
+                        .form-check.ms-3
+                            input#PropertyVerifiedNo.form-check-input(type='radio' name='PropertyVerifiedYesNo' value='option2' )
+                            label.form-check-label(for='PropertyVerifiedNo')
+                                | No
+                td
+                    a.btn
+                        i.fa.fa-trash-o.text-danger
+//end of Other Income

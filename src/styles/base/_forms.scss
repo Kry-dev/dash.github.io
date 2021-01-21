@@ -1,11 +1,16 @@
+.form-control, .form-select {
+    min-height: $input-min-height; //38px
+}
 .input-group {
     position: relative;
     
     &-text {
         position: absolute;
-        z-index: 1;
-        top: 0.25rem;
-        left: 0.5rem;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        width: $input-min-height;
+        height: $input-min-height;
         border: 0;
         background: transparent;
     }
@@ -16,20 +21,25 @@
         justify-content: center;
         width: 1.25rem;
         height: 1.25rem;
+        line-height: $input-min-height/2;
         color: $input-group-addon-fa-color;
         
         &.fa-usd {
+            font-size: .625rem;
+        }
+        &.fa-usd:after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 1rem;
+            height: 1rem;
             border: 1px solid $input-group-addon-fa-color;
             border-radius: 50%;
         }
     }
     
     .form-control {
-        padding-left: 3rem;
-        
-        &:focus {
-            padding-left: .5rem;
-        }
+        padding-left: $input-min-height;
     }
     
     > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {

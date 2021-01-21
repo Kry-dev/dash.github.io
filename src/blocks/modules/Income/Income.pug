@@ -4,24 +4,28 @@
         h5 Social Security
         .row.mb-3
             label.col-sm-2.col-form-label(for='residentAmount') Resident
-            .col-sm-5.input-group
-                .input-group-text
-                    i.fa.fa-usd
-                input#residentAmount.form-control(type='text' placeholder='Amount')
-            .col-sm-5.input-group
-                .input-group-text
-                    i.fa.fa-calendar
-                input#residentDate.form-control(type='date' placeholder='mm/dd/yyyy')
+            .col-sm-5
+                .input-group
+                    .input-group-text
+                        i.fa.fa-usd
+                    input#residentAmount.form-control(type='text' placeholder='Amount')
+            .col-sm-5
+                .input-group
+                    .input-group-text
+                        i.fa.fa-calendar
+                    input#residentDate.form-control(type='date' placeholder='mm/dd/yyyy')
         .row.mb-3
             label.col-sm-2.col-form-label(for='spouseAmount') Spouse
-            .col-sm-5.input-group
-                .input-group-text
-                    i.fa.fa-usd
-                input#spouseAmount.form-control(type='email' placeholder='Amount')
-            .col-sm-5.input-group
-                .input-group-text
-                    i.fa.fa-calendar
-                input#spouseDate.form-control(type='date' placeholder='mm/dd/yyyy')
+            .col-sm-5
+                .input-group
+                    .input-group-text
+                        i.fa.fa-usd
+                    input#spouseAmount.form-control(type='email' placeholder='Amount')
+            .col-sm-5
+                .input-group
+                    .input-group-text
+                        i.fa.fa-calendar
+                    input#spouseDate.form-control(type='date' placeholder='mm/dd/yyyy')
     .col-2
         h5 Verified?
         .row.mb-1
@@ -54,24 +58,28 @@
         h5 Supplemental Security Income
         .row.mb-3
             label.col-sm-2.col-form-label(for='residentSupplementalAmount') Resident
-            .col-sm-5.input-group
+            .col-sm-5
+                .input-group
                     .input-group-text
                         i.fa.fa-usd
                     input#residentSupplementalAmount.form-control(type='text' placeholder='Amount')
-            .col-sm-5.input-group
-                .input-group-text
-                    i.fa.fa-calendar
-                input#residentSupplementalDate.form-control(type='date' placeholder='mm/dd/yyyy')
+            .col-sm-5
+                .input-group
+                    .input-group-text
+                        i.fa.fa-calendar
+                    input#residentSupplementalDate.form-control(type='date' placeholder='mm/dd/yyyy')
         .row.mb-3
             label.col-sm-2.col-form-label(for='spouseAmount') Spouse
-            .col-sm-5.input-group
+            .col-sm-5
+                .input-group
                     .input-group-text
                         i.fa.fa-usd
                     input#spouseSupplementalAmount.form-control(type='email' placeholder='Amount')
-            .col-sm-5.input-group
-                .input-group-text
-                    i.fa.fa-calendar
-                input#spouseSupplementalDate.form-control(type='date' placeholder='mm/dd/yyyy')
+            .col-sm-5
+                .input-group
+                    .input-group-text
+                        i.fa.fa-calendar
+                    input#spouseSupplementalDate.form-control(type='date' placeholder='mm/dd/yyyy')
     .col-2
         h5 Verified?
         .row.mb-1
@@ -104,24 +112,28 @@
         h5 VA Benefits
         .row.mb-3
             label.col-sm-2.col-form-label(for='residentVABenefitsAmount') Resident
-            .col-sm-5.input-group
+            .col-sm-5
+                .input-group
                     .input-group-text
                         i.fa.fa-usd
                     input#residentVABenefitsAmount.form-control(type='text' placeholder='Amount')
-            .col-sm-5.input-group
-                .input-group-text
-                    i.fa.fa-calendar
-                input#residentVABenefitsDate.form-control(type='date' placeholder='mm/dd/yyyy')
+            .col-sm-5
+                .input-group
+                    .input-group-text
+                        i.fa.fa-calendar
+                    input#residentVABenefitsDate.form-control(type='date' placeholder='mm/dd/yyyy')
         .row.mb-3
             label.col-sm-2.col-form-label(for='spouseVABenefitsAmount') Spouse
-            .col-sm-5.input-group
+            .col-sm-5
+                .input-group
                     .input-group-text
                         i.fa.fa-usd
                     input#spouseVABenefitsAmount.form-control(type='email' placeholder='Amount')
-            .col-sm-5.input-group
-                .input-group-text
-                    i.fa.fa-calendar
-                input#spouseVABenefitsDate.form-control(type='date' placeholder='mm/dd/yyyy')
+            .col-sm-5
+                .input-group
+                    .input-group-text
+                        i.fa.fa-calendar
+                    input#spouseVABenefitsDate.form-control(type='date' placeholder='mm/dd/yyyy')
     .col-2
         h5 Verified?
         .row.mb-1
@@ -184,7 +196,10 @@
                             option Option 2
                             option Option 3
                     td
-                        input#incomeStartDate.form-control(type='date' placeholder='mm/dd/yyyy')
+                        .input-group
+                            .input-group-text
+                                i.fa.fa-calendar
+                            input#incomeStartDate.form-control(type='date' placeholder='mm/dd/yyyy')
                     td
                         input#IncomeAmount.form-control(type="text", placeholder="Amount")
                     td
@@ -194,20 +209,6 @@
                             option Option 2
                             option Option 3
 
-                    //td.row.row-cols-3.px-1
-                    //    .col
-                    //        .form-check
-                    //            input#OtherIncomeYes.form-check-input(type='radio' name='OtherIncomeYesNo' value='option1' checked='')
-                    //            label.form-check-label(for='VABenefitsSpouseYes')
-                    //                | Yes
-                    //    .col
-                    //        .form-check
-                    //            input#OtherIncomeNo.form-check-input(type='radio' name='OtherIncomeYesNo' value='option2' )
-                    //            label.form-check-label(for='VABenefitsSpouseNo')
-                    //                | No
-                    //    .col
-                    //        a.btn
-                    //            i.fa.fa-trash-o.text-danger
                     td.d-flex.flex-row.justify-content-between.align-content-center
                         .form-check
                             input#OtherIncomeYes.form-check-input(type='radio' name='OtherIncomeYesNo' value='option1' checked='')
