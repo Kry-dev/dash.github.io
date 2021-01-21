@@ -4,7 +4,7 @@
 $white:    #fff;
 $gray-100: #f8f9fa;
 $gray-200: #e9ecef;
-$gray-300: #dee2e6;
+$gray-300: #e4e4e4;
 $gray-400: #ced4da;
 $gray-500: #adb5bd;
 $gray-600: #858585;
@@ -13,8 +13,35 @@ $gray-800: #343a40;
 $gray-900: #202020;
 $black:    #000;
 
+$blue-light: #f5f9fb;
+$blue-dark: #113150;
+$red: #e10135;
+
+
+// scss-docs-start colors-map
+$colors: (
+    "bluedark":       $blue-dark,
+    "red":        $red,
+);
+// scss-docs-end colors-map
+
+//$primary:       $blue;
+$bluedark:      $blue-dark;
+$danger:        $red;
+$light:         $blue-light;
+
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+    "bluedark":   $bluedark,
+    "danger":     $danger,
+);
+
+
+
+
 //Sidebar
-$sidenav-bg: #113150;
+$sidenav-bg: $blue-dark;
 $sidebar-width: 15.625rem; //250px
 // Body
 //
@@ -23,6 +50,9 @@ $sidebar-width: 15.625rem; //250px
 $body-bg:                   $white;
 $body-color:                $gray-900;
 $body-text-align:           null;
+
+// content wrapper
+$content-wrapper-bg: $blue-light;
 
 // Typography
 //
@@ -49,3 +79,35 @@ $spacers: (
     5: $spacer * 3,
     6: $spacer * 4,
 );
+
+
+//Forms
+//
+
+
+$input-group-addon-bg: transparent;
+$input-group-addon-padding-y: 0.375rem;
+$input-group-addon-padding-x: 0.75rem;
+$input-font-size: 0.875rem;
+$form-label-font-size: 0.875rem;
+$form-text-font-size: 0.875rem;
+$input-group-addon-color: $gray-700;
+$input-group-addon-fa-color: $gray-700;
+$border-color: $gray-300;
+$input-placeholder-color: $gray-700;
+
+$form-check-input-border: 1px solid $border-color;
+$form-check-input-checked-bg-color: $blue-dark;
+$form-check-input-checked-border-color: $blue-dark;
+
+
+//Tables
+$table-striped-bg: $blue-light;
+
+
+$border-radius: .5rem;
+
+
+
+$input-border-radius: .25rem;
+$form-select-border-radius: .25rem;

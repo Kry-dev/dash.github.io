@@ -1,0 +1,211 @@
+//Social Security
+.row.mb-3
+    .col-8
+        h5 Social Security
+        .row.mb-3
+            label.col-sm-2.col-form-label(for='residentAmount') Resident
+            .col-sm-5.input-group
+                .input-group-text
+                    i.fa.fa-usd
+                input#residentAmount.form-control(type='text' placeholder='Amount')
+            .col-sm-5.input-group
+                .input-group-text
+                    i.fa.fa-calendar
+                input#residentDate.form-control(type='date' placeholder='mm/dd/yyyy')
+        .row.mb-3
+            label.col-sm-2.col-form-label(for='spouseAmount') Spouse
+            .col-sm-5.input-group
+                .input-group-text
+                    i.fa.fa-usd
+                input#spouseAmount.form-control(type='email' placeholder='Amount')
+            .col-sm-5.input-group
+                .input-group-text
+                    i.fa.fa-calendar
+                input#spouseDate.form-control(type='date' placeholder='mm/dd/yyyy')
+    .col-2
+        h5 Verified?
+        .row.mb-1
+            .col
+                .form-check.py-2
+                    input#ResidentYes.form-check-input(type='radio' name='ResidentYesNO' value='option1' checked='')
+                    label.form-check-label(for='ResidentYes')
+                        | Yes
+            .col
+                .form-check.py-2
+                    input#ResidentNo.form-check-input(type='radio' name='ResidentYesNO' value='option2' )
+                    label.form-check-label(for='ResidentNo')
+                        | No
+
+        .row
+            .col
+                .form-check.py-2
+                    input#SpouseYes.form-check-input(type='radio' name='SpouseYesNo' value='option1' checked='')
+                    label.form-check-label(for='SpouseYes')
+                        | Yes
+            .col
+                .form-check.py-2
+                    input#SpouseNo.form-check-input(type='radio' name='SpouseYesNo' value='option2' )
+                    label.form-check-label(for='SpouseNo')
+                        | No
+//end of Social Security
+//Supplemental Security Income
+.row.mb-3
+    .col-8
+        h5 Supplemental Security Income
+        .row.mb-3
+            label.col-sm-2.col-form-label(for='residentSupplementalAmount') Resident
+            .col-sm-5.input-group
+                    .input-group-text
+                        i.fa.fa-usd
+                    input#residentSupplementalAmount.form-control(type='text' placeholder='Amount')
+            .col-sm-5.input-group
+                .input-group-text
+                    i.fa.fa-calendar
+                input#residentSupplementalDate.form-control(type='date' placeholder='mm/dd/yyyy')
+        .row.mb-3
+            label.col-sm-2.col-form-label(for='spouseAmount') Spouse
+            .col-sm-5.input-group
+                    .input-group-text
+                        i.fa.fa-usd
+                    input#spouseSupplementalAmount.form-control(type='email' placeholder='Amount')
+            .col-sm-5.input-group
+                .input-group-text
+                    i.fa.fa-calendar
+                input#spouseSupplementalDate.form-control(type='date' placeholder='mm/dd/yyyy')
+    .col-2
+        h5 Verified?
+        .row.mb-1
+            .col
+                .form-check.py-2
+                    input#ResidentSupplementalYes.form-check-input(type='radio' name='SecurityIncomeYesNO' value='option1' checked='')
+                    label.form-check-label(for='ResidentSupplementalYes')
+                        | Yes
+            .col
+                .form-check.py-2
+                    input#ResidentSupplementalNo.form-check-input(type='radio' name='SecurityIncomeYesNO' value='option2' )
+                    label.form-check-label(for='ResidentSupplementalNo')
+                        | No
+
+        .row
+            .col
+                .form-check.py-2
+                    input#IncomeYes.form-check-input(type='radio' name='IncomeYesNo' value='option1' checked='')
+                    label.form-check-label(for='IncomeYes')
+                        | Yes
+            .col
+                .form-check.py-2
+                    input#IncomeNo.form-check-input(type='radio' name='IncomeYesNo' value='option2' )
+                    label.form-check-label(for='IncomeNo')
+                        | No
+//end of Supplemental Security Income
+//VA Benefits
+.row.mb-3
+    .col-8
+        h5 VA Benefits
+        .row.mb-3
+            label.col-sm-2.col-form-label(for='residentVABenefitsAmount') Resident
+            .col-sm-5.input-group
+                    .input-group-text
+                        i.fa.fa-usd
+                    input#residentVABenefitsAmount.form-control(type='text' placeholder='Amount')
+            .col-sm-5.input-group
+                .input-group-text
+                    i.fa.fa-calendar
+                input#residentVABenefitsDate.form-control(type='date' placeholder='mm/dd/yyyy')
+        .row.mb-3
+            label.col-sm-2.col-form-label(for='spouseVABenefitsAmount') Spouse
+            .col-sm-5.input-group
+                    .input-group-text
+                        i.fa.fa-usd
+                    input#spouseVABenefitsAmount.form-control(type='email' placeholder='Amount')
+            .col-sm-5.input-group
+                .input-group-text
+                    i.fa.fa-calendar
+                input#spouseVABenefitsDate.form-control(type='date' placeholder='mm/dd/yyyy')
+    .col-2
+        h5 Verified?
+        .row.mb-1
+            .col
+                .form-check.py-2
+                    input#VABenefitsResidentYes.form-check-input(type='radio' name='VABenefitsResidentYesNO' value='option1' checked='')
+                    label.form-check-label(for='VABenefitsResidentYes')
+                        | Yes
+            .col
+                .form-check.py-2
+                    input#VABenefitsResidentNo.form-check-input(type='radio' name='VABenefitsResidentYesNO' value='option2' )
+                    label.form-check-label(for='VABenefitsResidentNo')
+                        | No
+
+        .row
+            .col
+                .form-check.py-2
+                    input#VABenefitsSpouseYes.form-check-input(type='radio' name='VABenefitsSpouseYesNo' value='option1' checked='')
+                    label.form-check-label(for='VABenefitsSpouseYes')
+                        | Yes
+            .col
+                .form-check.py-2
+                    input#VABenefitsSpouseNo.form-check-input(type='radio' name='VABenefitsSpouseYesNo' value='option2' )
+                    label.form-check-label(for='VABenefitsSpouseNo')
+                        | No
+
+//end of VA Benefits
+
+//Other Income
+.row
+    h5  Other Income
+        a.btn
+            i.fa.fa-plus-square-o
+    .row
+        table.table.table-sm
+            thead
+                tr
+                    th Type
+                    th Description
+                    th Owner
+                    th Start Date
+                    th Amount
+                    th Pay Frequency
+                    th Verified?
+            tbody
+                tr
+                    td
+                        select#incomeType.form-select
+                            option(selected='') Civil Service
+                            option Option 1
+                            option Option 2
+                            option Option 3
+
+                    td
+                        input#IncomeDescription.form-control(type="text")
+                    td
+                        select#incomeOwner.form-select
+                            option(selected='') Joint
+                            option Option 1
+                            option Option 2
+                            option Option 3
+                    td
+                        input#incomeStartDate.form-control(type='date' placeholder='mm/dd/yyyy')
+                    td
+                        input#IncomeAmount.form-control(type="text")
+                    td
+                        select#PayFrequency.form-select
+                            option(selected='') Monthly
+                            option Option 1
+                            option Option 2
+                            option Option 3
+
+                    td.row
+                        .col
+                            .form-check
+                                input#OtherIncomeYes.form-check-input(type='radio' name='OtherIncomeYesNo' value='option1' checked='')
+                                label.form-check-label(for='VABenefitsSpouseYes')
+                                    | Yes
+                        .col
+                            .form-check
+                                input#OtherIncomeNo.form-check-input(type='radio' name='OtherIncomeYesNo' value='option2' )
+                                label.form-check-label(for='VABenefitsSpouseNo')
+                                    | No
+                        .col
+                            a.btn
+                                i.fa.fa-trash.text-danger
+//end of Other Income

@@ -1,0 +1,27 @@
+.table {
+    border-radius: $border-radius;
+    &.table-bordered {
+        > :not(caption) > * > * {
+            padding: 1rem 1rem;
+        }
+        > :not(:last-child) > :last-child > * {
+            border-bottom-color: $border-color;
+        }
+        > thead {
+            border-color: transparent;
+            border-bottom-color: $border-color;
+        }
+        > tbody {
+            border: 1px solid $border-color;
+        }
+        > tbody > tr > td {
+            border: 0;
+            border-right-width: 1px;
+            border-right-style: dashed;
+            border-right-color: $border-color;
+            &:last-child {
+                border: 0;
+            }
+        }
+    }
+}

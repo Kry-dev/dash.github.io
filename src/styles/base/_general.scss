@@ -71,7 +71,7 @@ body {
     min-height: calc(100vh - 56px);
     padding-top: 1rem;
     overflow-x: hidden;
-    background: white;
+    background: $content-wrapper-bg;
 }
 
 .smaller {
@@ -125,4 +125,8 @@ body {
 
 .card-register {
     max-width: 40rem;
+}
+
+.card {
+    min-height: 11.25rem;
 }

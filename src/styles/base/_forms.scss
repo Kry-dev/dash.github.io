@@ -1,0 +1,65 @@
+.input-group {
+    position: relative;
+    
+    &-text {
+        position: absolute;
+        z-index: 1;
+        top: 0.25rem;
+        left: 0.5rem;
+        border: 0;
+        background: transparent;
+    }
+    
+    .fa {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1.25rem;
+        height: 1.25rem;
+        color: $input-group-addon-fa-color;
+        
+        &.fa-usd {
+            border: 1px solid $input-group-addon-fa-color;
+            border-radius: 50%;
+        }
+    }
+    
+    .form-control {
+        padding-left: 3rem;
+        
+        &:focus {
+            padding-left: .5rem;
+        }
+    }
+    
+    > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+        border-radius: $input-border-radius;
+    }
+}
+
+.col-form-label {
+    font-size: 1rem;
+}
+
+input[type="date"] {
+    position: relative;
+    color: $input-placeholder-color;
+    
+    &::placeholder {
+        color: $input-placeholder-color;
+    }
+    
+    &:focus {
+        color: $dark;
+    }
+}
+
+input[type="date" i] {
+    &::-webkit-calendar-picker-indicator {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        background-position: 5px 3px;
+        background-size: 16px 12px;
+    }
+}
+
