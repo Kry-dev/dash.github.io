@@ -1,0 +1,186 @@
+//Bills
+h5 Bills
+    a.btn
+        i.fa.fa-plus-square-o
+.row.mb-3
+    .col-auto
+        label.form-label Does the resident or spouse have any bills?
+        .d-flex
+            .form-check
+                input#BillsYes.form-check-input(type='radio' name='BillsYesNO' value='option1' checked='')
+                label.form-check-label(for='BillsYes')
+                    | Yes
+            .form-check.ms-3
+                input#BillsNo.form-check-input(type='radio' name='BillsYesNO' value='option2' )
+                label.form-check-label(for='BillsNo')
+                    | No
+
+
+//Bills Table
+.row
+    table.table.table-sm.table-bordered.align-middle
+        thead
+            tr
+                th Owner
+                th Type
+                th Name / Description
+                th Account
+                th Amount
+                th Verified?
+                th
+        tbody.table-light
+            tr
+                td
+                    select.form-select
+                        option(selected='') Joint
+                        option Option 1
+                        option Option 2
+                        option Option 3
+                td
+                    select.form-select
+                        option(selected='') Insurance
+                        option Option 1
+                        option Option 2
+                        option Option 3
+
+                td
+                    input.form-control(type="text" placeholder="" value="Omaha supplem")
+
+                td
+                    input.form-control(type="text" placeholder="*4091" value="*4091")
+                td
+                    .input-group
+                        .input-group-text
+                            i.fa.fa-usd
+                        input.form-control(type="text", placeholder="000.00")
+
+                td
+                    .d-flex.flex-row.py-2
+                        .form-check
+                            input#BillsVerifiedYes.form-check-input(type='radio' name='BillsVerifiedYesNo' value='option1' checked='')
+                            label.form-check-label(for='BillsVerifiedYes')
+                                | Yes
+                        .form-check.ms-3
+                            input#BillsVerifiedNo.form-check-input(type='radio' name='BillsVerifiedYesNo' value='option2' )
+                            label.form-check-label(for='BillsVerifiedNo')
+                                | No
+                td.actions
+                    a.btn.text-right
+                        i.fa.fa-trash-o.text-danger
+            tr
+                td
+                    select.form-select
+                        option(selected='') Joint
+                        option Option 1
+                        option Option 2
+                        option Option 3
+                td
+                    select.form-select
+                        option(selected='') Electric
+                        option Option 1
+                        option Option 2
+                        option Option 3
+
+                td
+                    input.form-control(type="text" placeholder="" value="KY ENERGY")
+
+                td
+                    input.form-control(type="text" placeholder="*4091" value="*7312")
+                td
+                    .input-group
+                        .input-group-text
+                            i.fa.fa-usd
+                        input.form-control(type="text", placeholder="000.00" value="106.01")
+
+                td
+                    .d-flex.flex-row.py-2
+                        .form-check
+                            input#BillsVerified2Yes.form-check-input(type='radio' name='BillsVerified2YesNo' value='option1' checked='')
+                            label.form-check-label(for='BillsVerified2Yes')
+                                | Yes
+                        .form-check.ms-3
+                            input#BillsVerified2No.form-check-input(type='radio' name='BillsVerified2YesNo' value='option2' )
+                            label.form-check-label(for='BillsVerified2No')
+                                | No
+                td.actions
+                    a.btn.text-right
+                        i.fa.fa-trash-o.text-danger
+            tr
+                td
+                    select.form-select
+                        option(selected='') Joint
+                        option Option 1
+                        option Option 2
+                        option Option 3
+                td
+                    select.form-select
+                        option(selected='') Other
+                        option Option 1
+                        option Option 2
+                        option Option 3
+
+                td
+                    input.form-control(type="text" placeholder="" value="Wells Fargo CC")
+
+                td
+                    input.form-control(type="text" placeholder="*4091" value="*2281")
+                td
+                    .input-group
+                        .input-group-text
+                            i.fa.fa-usd
+                        input.form-control(type="text", placeholder="000.00", value="127.15")
+
+                td
+                    .d-flex.flex-row.py-2
+                        .form-check
+                            input#BillsVerified3Yes.form-check-input(type='radio' name='BillsVerified3YesNo' value='option1' checked='')
+                            label.form-check-label(for='BillsVerified3Yes')
+                                | Yes
+                        .form-check.ms-3
+                            input#BillsVerified3No.form-check-input(type='radio' name='BillsVerified3YesNo' value='option2' )
+                            label.form-check-label(for='BillsVerified3No')
+                                | No
+                td.actions
+                    a.btn.text-right
+                        i.fa.fa-trash-o.text-danger
+            tr
+                td
+                    select.form-select
+                        option(selected='') Joint
+                        option Option 1
+                        option Option 2
+                        option Option 3
+                td
+                    select.form-select
+                        option(selected='') Cable
+                        option Option 1
+                        option Option 2
+                        option Option 3
+
+                td
+                    input.form-control(type="text" placeholder="" value="AT&T-TV/PHON")
+
+                td
+                    input.form-control(type="text" placeholder="*4091" value="*1255")
+                td
+                    .input-group
+                        .input-group-text
+                            i.fa.fa-usd
+                        input.form-control(type="text", placeholder="000.00", value="125.01")
+
+                td
+                    .d-flex.flex-row.py-2
+                        .form-check
+                            input#BillsVerified4Yes.form-check-input(type='radio' name='BillsVerified4YesNo' value='option1' checked='')
+                            label.form-check-label(for='BillsVerified4Yes')
+                                | Yes
+                        .form-check.ms-3
+                            input#BillsVerified4No.form-check-input(type='radio' name='BillsVerified4YesNo' value='option2' )
+                            label.form-check-label(for='BillsVerified4No')
+                                | No
+                td.actions
+                    a.btn.text-right
+                        i.fa.fa-trash-o.text-danger
+
+//end of Bills Table
+//end of Bills

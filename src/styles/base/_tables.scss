@@ -31,6 +31,9 @@
         > tbody > tr > td {
             border-right-width: 0;
         }
+        > tbody > tr + tr {
+            border-top: 1px dashed $border-color;
+        }
     }
     .actions {
         text-align: right;
