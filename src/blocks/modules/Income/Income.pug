@@ -156,7 +156,7 @@
         a.btn
             i.fa.fa-plus-square-o
     .row
-        table.table.table-sm
+        table.table.table-sm.table-striped.table-bordered
             thead
                 tr
                     th Type
@@ -176,7 +176,7 @@
                             option Option 3
 
                     td
-                        input#IncomeDescription.form-control(type="text")
+                        input#IncomeDescription.form-control(type="text" placeholder="Description")
                     td
                         select#incomeOwner.form-select
                             option(selected='') Joint
@@ -186,7 +186,7 @@
                     td
                         input#incomeStartDate.form-control(type='date' placeholder='mm/dd/yyyy')
                     td
-                        input#IncomeAmount.form-control(type="text")
+                        input#IncomeAmount.form-control(type="text", placeholder="Amount")
                     td
                         select#PayFrequency.form-select
                             option(selected='') Monthly
@@ -194,18 +194,29 @@
                             option Option 2
                             option Option 3
 
-                    td.row
-                        .col
-                            .form-check
-                                input#OtherIncomeYes.form-check-input(type='radio' name='OtherIncomeYesNo' value='option1' checked='')
-                                label.form-check-label(for='VABenefitsSpouseYes')
-                                    | Yes
-                        .col
-                            .form-check
-                                input#OtherIncomeNo.form-check-input(type='radio' name='OtherIncomeYesNo' value='option2' )
-                                label.form-check-label(for='VABenefitsSpouseNo')
-                                    | No
-                        .col
-                            a.btn
-                                i.fa.fa-trash.text-danger
+                    //td.row.row-cols-3.px-1
+                    //    .col
+                    //        .form-check
+                    //            input#OtherIncomeYes.form-check-input(type='radio' name='OtherIncomeYesNo' value='option1' checked='')
+                    //            label.form-check-label(for='VABenefitsSpouseYes')
+                    //                | Yes
+                    //    .col
+                    //        .form-check
+                    //            input#OtherIncomeNo.form-check-input(type='radio' name='OtherIncomeYesNo' value='option2' )
+                    //            label.form-check-label(for='VABenefitsSpouseNo')
+                    //                | No
+                    //    .col
+                    //        a.btn
+                    //            i.fa.fa-trash-o.text-danger
+                    td.d-flex.flex-row.justify-content-between.align-content-center
+                        .form-check
+                            input#OtherIncomeYes.form-check-input(type='radio' name='OtherIncomeYesNo' value='option1' checked='')
+                            label.form-check-label(for='VABenefitsSpouseYes')
+                                | Yes
+                        .form-check
+                            input#OtherIncomeNo.form-check-input(type='radio' name='OtherIncomeYesNo' value='option2' )
+                            label.form-check-label(for='VABenefitsSpouseNo')
+                                | No
+                        a.btn
+                            i.fa.fa-trash-o.text-danger
 //end of Other Income

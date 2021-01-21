@@ -24,4 +24,12 @@
             }
         }
     }
+    &.table-bordered.table-sm {
+        > :not(caption) > * > * {
+            padding: .5rem .5rem;
+        }
+        > tbody > tr > td {
+            border-right-width: 0;
+        }
+    }
 }

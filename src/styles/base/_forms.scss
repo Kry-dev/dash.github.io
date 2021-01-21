@@ -63,3 +63,16 @@ input[type="date" i] {
     }
 }
 
+.form-check {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 0;
+    .form-check-input {
+        margin-top: 0;
+        margin-left: 0;
+    }
+    &-label {
+        margin-left: .5rem;
+    }
+}

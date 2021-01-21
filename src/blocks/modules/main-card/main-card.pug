@@ -25,9 +25,9 @@
                         a#AuditLog-tab.nav-link(data-bs-toggle='tab' href='#AuditLog' role='tab' aria-controls='Audit Log' aria-selected='false') Audit Log
 
             #mainTabsContent.card-body.tab-content
-                    #Notes.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='Notes-tab')
+                    #Notes.tab-pane.fade(role='tabpanel' aria-labelledby='Notes-tab')
                         include ../Notes/Notes
-                    #Income.tab-pane.fade(role='tabpanel' aria-labelledby='Income-tab')
+                    #Income.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='Income-tab')
                         include ../Income/Income
                     #Assets.tab-pane.fade(role='tabpanel' aria-labelledby='Assets-tab') Assets
                     #Bills.tab-pane.fade(role='tabpanel' aria-labelledby='Bills-tab') Bills
