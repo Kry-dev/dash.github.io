@@ -1,0 +1,114 @@
+//Legal tab
+h5 Authority
+.row.mb-4
+    .col-4
+        label.form-label Does the resident have a Guardianship?
+        .d-flex
+            .form-check
+                input#AuthorityYes.form-check-input(type='radio' name='Authority' value='option1' checked='')
+                label.form-check-label(for='AuthorityYes')
+                    | Yes
+            .form-check.ms-3
+                input#AuthorityNeed.form-check-input(type='radio' name='Authority' value='option2' )
+                label.form-check-label(for='AuthorityNeed')
+                    | Need
+            .form-check.ms-3
+                input#AuthorityNA.form-check-input(type='radio' name='Authority' value='option3' )
+                label.form-check-label(for='AuthorityNA')
+                    | N/A
+
+    .col-4
+        label.form-label Does the resident have a Power of Attorney?
+        .d-flex
+            .form-check
+                input#AttorneyYes.form-check-input(type='radio' name='Attorney' value='option1' checked='')
+                label.form-check-label(for='AttorneyYes')
+                    | Yes
+            .form-check.ms-3
+                input#AttorneyNeed.form-check-input(type='radio' name='Attorney' value='option2' )
+                label.form-check-label(for='AttorneyNeed')
+                    | Need
+            .form-check.ms-3
+                input#AttorneyNA.form-check-input(type='radio' name='Attorney' value='option3' )
+                label.form-check-label(for='AttorneyNA')
+                    | N/A
+//end of row "Authority"
+h5 Legal
+.row.mb-4
+    .col-4
+        label.form-label Was an attorney contacted?
+        .d-flex
+            .form-check
+                input#attorneyContactedYes.form-check-input(type='radio' name='attorney contacted' value='option1' checked='')
+                label.form-check-label(for='AuthorityYes')
+                    | Yes
+            .form-check.ms-3
+                input#attorneyContactedNeed.form-check-input(type='radio' name='attorney contacted' value='option2' )
+                label.form-check-label(for='attorneyContactedNeed')
+                    | Need
+            .form-check.ms-3
+                input#attorneyContactedNA.form-check-input(type='radio' name='attorney contacted' value='option3' )
+                label.form-check-label(for='attorneyContactedNA')
+                    | N/A
+
+    .col-4
+        label.form-label Has a Personal Service Contract Been Performed?
+        .d-flex
+            .form-check
+                input#ContractYes.form-check-input(type='radio' name='Contract' value='option1' checked='')
+                label.form-check-label(for='ContractYes')
+                    | Yes
+            .form-check.ms-3
+                input#ContractNeed.form-check-input(type='radio' name='Contract' value='option2' )
+                label.form-check-label(for='ContractNeed')
+                    | Need
+            .form-check.ms-3
+                input#ContractNA.form-check-input(type='radio' name='Contract' value='option3' )
+                label.form-check-label(for='ContractNA')
+                    | N/A
+    .col-4
+        label.form-label Has a QIT been executed?
+        .d-flex
+            .form-check
+                input#QITYes.form-check-input(type='radio' name='QIT' value='option1' checked='')
+                label.form-check-label(for='QITYes')
+                    | Yes
+            .form-check.ms-3
+                input#QITNeed.form-check-input(type='radio' name='QIT' value='option2' )
+                label.form-check-label(for='QITNeed')
+                    | Need
+            .form-check.ms-3
+                input#QITNA.form-check-input(type='radio' name='QIT' value='option3' )
+                label.form-check-label(for='QITNA')
+                    | N/A
+//end of row "Legal"
+
+h5 Contract & Free Details
+.row.mb-4
+    .col-4
+        label.form-label MDR Over Assets Case?
+        .d-flex
+            .form-check
+                input#MDRYes.form-check-input(type='radio' name='MDR Over Assets Case' value='option1' checked='')
+                label.form-check-label(for='MDRYes')
+                    | Yes
+            .form-check.ms-3
+                input#MDRNO.form-check-input(type='radio' name='MDR Over Assets Case' value='option3' )
+                label.form-check-label(for='MDRNO')
+                    | NO
+
+    .col-4
+        label.form-label Private Pay Case?
+        .d-flex
+            .form-check
+                input#PrivatePayCaseYes.form-check-input(type='radio' name='Private Pay Case' value='option1' checked='')
+                label.form-check-label(for='PrivatePayCaseYes')
+                    | Yes
+
+            .form-check.ms-3
+                input#PrivatePayCaseNO.form-check-input(type='radio' name='Private Pay Case' value='option3' )
+                label.form-check-label(for='PrivatePayCaseNO')
+                    | No
+
+//end of row "Contract & Free Details"
+//end of Legal tab
