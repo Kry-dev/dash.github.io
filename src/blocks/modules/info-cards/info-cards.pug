@@ -85,17 +85,34 @@
                                     span.infolist-item__val 08/20/2020
 
     .col-lg-6
-        .card.text-center
-            .card-header
-                ul.nav.nav-tabs.card-header-tabs
-                    li.nav-item
-                        a.nav-link.active(aria-current='true' href='#') Active
-                    li.nav-item
-                        a.nav-link(href='#') Link
-                    li.nav-item
-                        a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+        .card.card-info
             .card-body
-                h5.card-title Special title treatment
-                p.card-text With supporting text below as a natural lead-in to additional content.
-                a.btn.btn-bluedark(href='#') Go somewhere
+                .row.mb-3
+                    h5.card-title Income
+                    .infolist.col
+                        .infolist-item
+                            span.infolist-item__name Social Security
+                            span.infolist-item__val
+                                strong $1,446.00
 
+                        .infolist-item
+                            span.infolist-item__name Pension
+                            span.infolist-item__val
+                                strong $0.00
+                    .infolist.col
+                        .infolist-item
+                            span.infolist-item__name Other
+                            span.infolist-item__val
+                                strong $245.00
+
+                        .infolist-item
+                            span.infolist-item__name Total
+                            span.infolist-item__val
+                                strong $1,691.00
+                .row
+                    h5.card-title Assets
+                    .infolist.col
+                        .infolist-item
+                            span.infolist-item__name Total
+                            span.infolist-item__val
+                                strong $3,400.00

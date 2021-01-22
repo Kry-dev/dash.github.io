@@ -68,9 +68,9 @@ body {
     @include media-breakpoint-up(md) {
         margin-left: 250px;
     }
-    min-height: calc(100vh - 56px);
-    padding-top: 1rem;
+    min-height: calc(100vh - $topbar-height);
     overflow-x: hidden;
+    padding-top: $topbar-height;
     background: $content-wrapper-bg;
 }
 
@@ -100,33 +100,6 @@ body {
     transform: rotate(15deg);
 }
 
-@include media-breakpoint-up(xs) {
-    .card-columns {
-        column-count: 1;
-    }
-}
-
-
-@include media-breakpoint-up(sm) {
-    .card-columns {
-        column-count: 2;
-    }
-}
-
-@include media-breakpoint-up(xl) {
-    .card-columns {
-        column-count: 2;
-    }
-}
-
-.card-login {
-    max-width: 25rem;
-}
-
-.card-register {
-    max-width: 40rem;
-}
-
 .card {
-    min-height: 11.25rem;
+    min-height: 12.25rem;
 }

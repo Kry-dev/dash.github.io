@@ -1,4 +1,26 @@
 .navbar-top {
-    padding-left: 250px;
-    background: $dark;
+    //padding-left: 260px;
+    //background: $dark;
+}
+.topbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.375rem 1.375rem 1.375rem $sidebar-width;
+    &-title {
+        padding: 0 1rem;
+        font-size: 1.375rem;
+        line-height: 1.6875rem;
+    }
+    &-search {
+        max-width: 250px;
+        .fa.fa-search {
+            color: $primary;
+        }
+    }
+    .btn {
+        min-width: 130px;
+    }
 }
