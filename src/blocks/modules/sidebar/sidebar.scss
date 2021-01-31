@@ -36,7 +36,7 @@
             font-size: 20px;
         }
         &:hover, &:focus {
-            .nav-linl-text {
+            .nav-link-text {
                 color: $white;
             }
         }
@@ -51,7 +51,46 @@
             padding: 0 .5rem;
         }
     }
-   
+    .accordion-item {
+        position: relative;
+        padding: 0;
+        color: rgba($white, .7);
+        &.active {
+            background: rgba($white, 0.09);
+        }
+        .fa {
+            font-size: 20px;
+        }
+        &:hover, &:focus {
+            .nav-link-text {
+                color: $white;
+            }
+        }
+        .sidenav-btn {
+            color: inherit;
+        }
+        .nav-link-text {
+            padding: 0 .5rem;
+        }
+    }
+    .accordion-button {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        color: rgba($white, .7);
+        font-weight: 700;
+        &:after {
+            display: none !important;
+        }
+        &[aria-expanded="true"] {
+            background: rgba($white, .09);
+            color: $white;
+        }
+        &[aria-expanded="true"] + .sidenav-btn {
+            color: $white;
+            z-index: 5;
+        }
+    }
     .sidenav-btn {
         position: absolute;
         top: 1rem;
@@ -63,13 +102,15 @@
             cursor: pointer;
             outline: none;
             .fa {
-                color: $white;
+                //color: $white;
             }
         }
     }
+    .accordion-collapse.show {
+        background: rgba($white, .09);
+    }
 }
 .sidenav-from {
-    padding: 1rem 0;
     input {
         font-weight: normal;
         font-size: 0.825rem;

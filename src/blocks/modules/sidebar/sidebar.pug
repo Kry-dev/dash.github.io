@@ -1,86 +1,150 @@
-ul#sidebar.navbar-nav.navbar-sidenav
+ul#sidebar.navbar-nav.navbar-sidenav.accordion.accordion-flush
     li.profile-name
         h3 Joe Resident
         p.my-0 File #1001001
-    li.nav-item.active(data-bs-toggle='tooltip' data-placement='right' title='Resident Profile')
-        a.nav-link( data-bs-toggle="collapse" href="#resident" role="button" aria-expanded="false" aria-controls="collapseResident")
+    li.accordion-item
+        button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#ResidentProfile' aria-expanded='true' aria-controls='ResidentProfile')
             i.fa.fa-fw.fa-user-o(aria-hidden="true")
             span.nav-link-text Resident Profile
         button.sidenav-btn.js-edit(type="button")
             i.fa.fa-fw.fa-pencil-square-o(aria-hidden="true")
-        .collapse.show#resident
-            form.form.sidenav-from.is-readonly
-                .row.mb-4
-                    .col
-                        label.form-label SS#
-                        input.form-control(type='text' placeholder='XXX-XX-6787' aria-label='SS#' value="XXX-XX-6787", disabled)
-                    .col
-                        label.form-label DOB
-                        input.form-control(type='text' value="01/01/1944" placeholder='01/01/1944' aria-label='DOB' , disabled)
-                .row
-                    .col
-                        label.form-label Age
-                        input.form-control(type='text' placeholder='age' aria-label='Age' value="76", disabled)
-                    .col
-                        label.form-label Gender
-                        input.form-control(type='text' value="M" placeholder='M' aria-label='Gender', disabled)
-                .row
-                    .col
-                        label.form-label Facility State
-                        input.form-control(type='text' placeholder='FL' aria-label='Facility State' value="FL", disabled)
-                    .col
-                        label.form-label Facility County
-                        input.form-control(type='text' value="Hillsborough" placeholder='Hillsborough' aria-label='Facility County', disabled)
-                .row
-                    .col
-                        label.form-label Facility
-                        input.form-control(type='text' value="Avante of Orlando" placeholder='Avante of Orlando' aria-label='Facility', disabled)
-                .row.mb-4
-                    .col
-                        label.form-label Original Address
-                        input.form-control(type='text' value="123 Main St, Tampa, FL 33615" placeholder='123 Main St, Tampa, FL 33615' aria-label='Original Address', disabled)
+        #ResidentProfile.accordion-collapse.collapse.show(data-bs-parent='#sidebar')
+            .accordion-body
+                form.form.sidenav-from.is-readonly
+                    .row.mb-4
+                        .col
+                            label.form-label SS#
+                            input.form-control(type='text' placeholder='XXX-XX-6787' aria-label='SS#' value="XXX-XX-6787", disabled)
+                        .col
+                            label.form-label DOB
+                            input.form-control(type='text' value="01/01/1944" placeholder='01/01/1944' aria-label='DOB' , disabled)
+                    .row
+                        .col
+                            label.form-label Age
+                            input.form-control(type='text' placeholder='age' aria-label='Age' value="76", disabled)
+                        .col
+                            label.form-label Gender
+                            input.form-control(type='text' value="M" placeholder='M' aria-label='Gender', disabled)
+                    .row
+                        .col
+                            label.form-label Facility State
+                            input.form-control(type='text' placeholder='FL' aria-label='Facility State' value="FL", disabled)
+                        .col
+                            label.form-label Facility County
+                            input.form-control(type='text' value="Hillsborough" placeholder='Hillsborough' aria-label='Facility County', disabled)
+                    .row
+                        .col
+                            label.form-label Facility
+                            input.form-control(type='text' value="Avante of Orlando" placeholder='Avante of Orlando' aria-label='Facility', disabled)
+                    .row.mb-4
+                        .col
+                            label.form-label Original Address
+                            input.form-control(type='text' value="123 Main St, Tampa, FL 33615" placeholder='123 Main St, Tampa, FL 33615' aria-label='Original Address', disabled)
 
-    li.nav-item(data-bs-toggle='tooltip' data-placement='right' title='Additional Info')
-        a.nav-link(href='#')
+    li.accordion-item
+        button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#AdditionalInfo' aria-expanded='false' aria-controls='AdditionalInfo')
             i.fa.fa-fw.fa-info-circle(aria-hidden="true")
             span.nav-link-text Additional Info
-        button.sidenav-btn
+        button.sidenav-btn.js-edit(type="button")
             i.fa.fa-fw.fa-pencil-square-o(aria-hidden="true")
-    li.nav-item(data-bs-toggle='tooltip' data-placement='right' title='Resident Status')
-        a.nav-link(href='#')
+        #AdditionalInfo.accordion-collapse.collapse( data-bs-parent='#sidebar')
+            .accordion-body
+                form.form.sidenav-from.is-readonly
+                    .row.mb-4
+                        .col
+                            label.form-label Gender:
+                            input.form-control(type='text' value="---" placeholder='---' aria-label='Gender' , disabled)
+                        .col
+                            label.form-label Marital Status:
+                            input.form-control(type='text' value="---" placeholder='---' aria-label='Marital Status' , disabled)
+                    .row
+                        .col
+                            label.form-label Country of Birth:
+                            input.form-control(type='text' value="---" placeholder='---' aria-label='Country of Birth' , disabled)
+                        .col
+                            label.form-label Preferred Language:
+                            input.form-control(type='text' value="---" placeholder='---' aria-label='Preferred Language', disabled)
+                    .row
+                        .col
+                            label.form-label US Citizen:
+                            input.form-control(type='text' value="---" placeholder='---' aria-label='US Citizen' , disabled)
+                        .col
+                            label.form-label Race:
+                            input.form-control(type='text' value="---" placeholder='---' aria-label='Race', disabled)
+                    .row
+                        .col
+                            label.form-label Military:
+                            input.form-control(type='text' value="---" placeholder='---' aria-label='Military', disabled)
+                        .col
+                            label.form-label Ethnicity:
+                            input.form-control(type='text' value="---" placeholder='---' aria-label='Ethnicity', disabled)
+                    .row
+                        .col
+                            label.form-label Veteran:
+                            input.form-control(type='text' value="---" placeholder='---' aria-label='Veteran', disabled)
+                        .col
+                            label.form-label License Number:
+                            input.form-control(type='text' value="---" placeholder='---' aria-label='License Number', disabled)
+
+
+    li.accordion-item
+        button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#ResidentStatus' aria-expanded='false' aria-controls='ResidentStatus')
             i.fa.fa-fw.fa-plus-circle(aria-hidden="true")
             span.nav-link-text Resident Status
-        button.sidenav-btn
+        button.sidenav-btn.js-edit(type="button")
             i.fa.fa-fw.fa-pencil-square-o(aria-hidden="true")
-    li.nav-item(data-bs-toggle='tooltip' data-placement='right' title='Contacts')
-        a.nav-link(href='#')
+        #ResidentStatus.accordion-collapse.collapse(data-bs-parent='#sidebar')
+            .accordion-body
+                strong This is the  accordion body.
+    li.accordion-item
+        button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#Contacts' aria-expanded='false' aria-controls='Contacts')
             i.fa.fa-fw.fa-address-book-o(aria-hidden="true")
             span.nav-link-text Contacts
-        button.sidenav-btn
+        button.sidenav-btn.js-edit(type="button")
             i.fa.fa-fw.fa-plus-square-o(aria-hidden="true")
-    li.nav-item(data-bs-toggle='tooltip' data-placement='right' title='Notes')
-        a.nav-link(href='#')
+        #Contacts.accordion-collapse.collapse(data-bs-parent='#sidebar')
+            .accordion-body
+                strong This is the  accordion body.
+
+    li.accordion-item
+        button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#Notes-tab' aria-expanded='false' aria-controls='Notes-tab')
             i.fa.fa-fw.fa-file-text-o(aria-hidden="true")
             span.nav-link-text Notes
         button.sidenav-btn
             i.fa.fa-fw.fa-search(aria-hidden="true")
-    li.nav-item(data-bs-toggle='tooltip' data-placement='right' title='Documents')
-        a.nav-link(href='#')
+        #Notes-tab.accordion-collapse.collapse(data-bs-parent='#sidebar')
+            .accordion-body
+                strong This is the  accordion body.
+
+    li.accordion-item
+        button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#Docs' aria-expanded='false' aria-controls='Docs')
             i.fa.fa-fw.fa-file-o(aria-hidden="true")
             span.nav-link-text Documents
         button.sidenav-btn
             i.fa.fa-fw.fa-search(aria-hidden="true")
-    li.nav-item(data-bs-toggle='tooltip' data-placement='right' title='FIA Requests')
-        a.nav-link(href='#')
+        #Docs.accordion-collapse.collapse(data-bs-parent='#sidebar')
+            .accordion-body
+                strong This is the  accordion body.
+
+    li.accordion-item
+        button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#FIA' aria-expanded='false' aria-controls='FIA')
             i.fa.fa-fw.fa-question-circle-o(aria-hidden="true")
-            span.nav-link-text FIA Requests
+            span.nav-link-text FIARequests
         button.sidenav-btn
             i.fa.fa-fw.fa-search(aria-hidden="true")
-    li.nav-item(data-bs-toggle='tooltip' data-placement='right' title='History')
-        a.nav-link(href='#')
+        #FIA.accordion-collapse.collapse(data-bs-parent='#sidebar')
+            .accordion-body
+                strong This is the  accordion body.
+
+    li.accordion-item
+        button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#History' aria-expanded='false' aria-controls='History')
             i.fa.fa-fw.fa-history(aria-hidden="true")
             span.nav-link-text History
         button.sidenav-btn
             i.fa.fa-fw.fa-plus-square-o(aria-hidden="true")
+        #History.accordion-collapse.collapse(data-bs-parent='#sidebar')
+            .accordion-body
+                strong This is the  accordion body.
+
 
 
