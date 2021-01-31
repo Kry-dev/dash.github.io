@@ -7,14 +7,18 @@
                         a#Notes-tab.nav-link.active(data-bs-toggle='tab' href='#Notes' role='tab' aria-controls='Notes' aria-selected='true') Notes
                     li.nav-item(role='presentation')
                         a#Income-tab.nav-link(data-bs-toggle='tab' href='#Income' role='tab' aria-controls='Income' aria-selected='false') Income
+                            span.count.text-danger 8
                     li.nav-item(role='presentation')
                         a#Assets-tab.nav-link(data-bs-toggle='tab' href='#Assets' role='tab' aria-controls='Assets' aria-selected='false') Assets
+                            span.count.text-danger 12
                     li.nav-item(role='presentation')
                         a#Bills-tab.nav-link(data-bs-toggle='tab' href='#Bills' role='tab' aria-controls='Bills' aria-selected='false') Bills
                     li.nav-item(role='presentation')
                         a#Legal-tab.nav-link(data-bs-toggle='tab' href='#Legal' role='tab' aria-controls='Legal' aria-selected='false') Legal
+                            span.count.text-danger 6
                     li.nav-item(role='presentation')
                         a#Signatures-tab.nav-link(data-bs-toggle='tab' href='#Signatures' role='tab' aria-controls='Signatures' aria-selected='false') Signatures
+                            span.count.text-danger 1
                     li.nav-item(role='presentation')
                         a#Documents-tab.nav-link(data-bs-toggle='tab' href='#Documents' role='tab' aria-controls='Documents' aria-selected='false') Documents
                     li.nav-item(role='presentation')
@@ -23,24 +27,23 @@
                         a#FIARequests-tab.nav-link(data-bs-toggle='tab' href='#FIARequests' role='tab' aria-controls='FIA Requests' aria-selected='false') FIA Requests
                     li.nav-item(role='presentation')
                         a#AuditLog-tab.nav-link(data-bs-toggle='tab' href='#AuditLog' role='tab' aria-controls='Audit Log' aria-selected='false') Audit Log
-
             #mainTabsContent.card-body.tab-content
-                    #Notes.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='Notes-tab')
-                        include ../Notes/Notes
-                    #Income.tab-pane.fade(role='tabpanel' aria-labelledby='Income-tab')
-                        include ../Income/Income
-                    #Assets.tab-pane.fade(role='tabpanel' aria-labelledby='Assets-tab')
-                        include ../Assets/Assets
-                    #Bills.tab-pane.fade(role='tabpanel' aria-labelledby='Bills-tab')
-                        include ../Bills/Bills
-                    #Legal.tab-pane.fade(role='tabpanel' aria-labelledby='Legal-tab')
-                        include ../Legal/Legal
-                    #Signatures.tab-pane.fade(role='tabpanel' aria-labelledby='Signatures-tab')
-                        include ../Signature/Signature
-                    #Documents.tab-pane.fade(role='tabpanel' aria-labelledby='Documents-tab')
-                        include ../Documents/Documents
-                    #Tasks.tab-pane.fade(role='tabpanel' aria-labelledby='Tasks-tab') Tasks
-                    #FIARequests.tab-pane.fade(role='tabpanel' aria-labelledby='FIARequests-tab')
-                        include ../FIA/FIA
-                    #AuditLog.tab-pane.fade(role='tabpanel' aria-labelledby='AuditLog-tab')
-                        include ../Audit/Audit
+                #Notes.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='Notes-tab')
+                    include ../Notes/Notes
+                #Income.tab-pane.fade(role='tabpanel' aria-labelledby='Income-tab')
+                    include ../Income/Income
+                #Assets.tab-pane.fade(role='tabpanel' aria-labelledby='Assets-tab')
+                    include ../Assets/Assets
+                #Bills.tab-pane.fade(role='tabpanel' aria-labelledby='Bills-tab')
+                    include ../Bills/Bills
+                #Legal.tab-pane.fade(role='tabpanel' aria-labelledby='Legal-tab')
+                    include ../Legal/Legal
+                #Signatures.tab-pane.fade(role='tabpanel' aria-labelledby='Signatures-tab')
+                    include ../Signature/Signature
+                #Documents.tab-pane.fade(role='tabpanel' aria-labelledby='Documents-tab')
+                    include ../Documents/Documents
+                #Tasks.tab-pane.fade(role='tabpanel' aria-labelledby='Tasks-tab') Tasks
+                #FIARequests.tab-pane.fade(role='tabpanel' aria-labelledby='FIARequests-tab')
+                    include ../FIA/FIA
+                #AuditLog.tab-pane.fade(role='tabpanel' aria-labelledby='AuditLog-tab')
+                    include ../Audit/Audit

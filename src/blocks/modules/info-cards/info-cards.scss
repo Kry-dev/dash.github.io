@@ -12,6 +12,9 @@
         }
         .nav-tabs {
             justify-content: space-between;
+            .nav-link {
+                position: relative;
+            }
         }
       
         .nav-link {
