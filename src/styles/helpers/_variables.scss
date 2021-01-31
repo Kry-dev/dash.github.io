@@ -31,6 +31,7 @@ $bluedark:      $blue-dark;
 $danger:        $red;
 $light:         $blue-light;
 $success:       $green;
+$secondary:     $gray-700;
 
 
 // scss-docs-start theme-colors-map
@@ -39,6 +40,7 @@ $theme-colors: (
     "bluedark":   $bluedark,
     "danger":     $danger,
     "success":    $success,
+    "secondary":  $secondary,
 );
 
 

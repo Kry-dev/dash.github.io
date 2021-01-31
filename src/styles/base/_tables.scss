@@ -39,9 +39,10 @@
         text-align: right;
     }
     .options {
-        .btn + .btn {
-            margin-left: .5rem;
-        }
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
     }
 }
 .table-responsive {
