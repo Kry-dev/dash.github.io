@@ -1,5 +1,8 @@
 .table {
     border-radius: $border-radius;
+    > thead {
+        color: $secondary;
+    }
     &.table-bordered {
         > :not(caption) > * > * {
             padding: 1rem 1rem;
