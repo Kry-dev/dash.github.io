@@ -2,43 +2,43 @@ ul#sidebar.navbar-nav.navbar-sidenav
     li.profile-name
         h3 Joe Resident
         p.my-0 File #1001001
-    li.nav-item(data-bs-toggle='tooltip' data-placement='right' title='Resident Profile')
+    li.nav-item.active(data-bs-toggle='tooltip' data-placement='right' title='Resident Profile')
         a.nav-link( data-bs-toggle="collapse" href="#resident" role="button" aria-expanded="false" aria-controls="collapseResident")
             i.fa.fa-fw.fa-user-o(aria-hidden="true")
             span.nav-link-text Resident Profile
-        button.sidenav-btn
+        button.sidenav-btn.js-edit(type="button")
             i.fa.fa-fw.fa-pencil-square-o(aria-hidden="true")
         .collapse.show#resident
-            form.form.sidenav-from
+            form.form.sidenav-from.is-readonly
                 .row.mb-4
                     .col
                         label.form-label SS#
-                        input.form-control(type='text' placeholder='XXX-XX-6787' aria-label='SS#' value="XXX-XX-6787", disabled="")
+                        input.form-control(type='text' placeholder='XXX-XX-6787' aria-label='SS#' value="XXX-XX-6787", disabled)
                     .col
                         label.form-label DOB
-                        input.form-control(type='text' value="01/01/1944" placeholder='01/01/1944' aria-label='DOB' , disabled="disabled")
+                        input.form-control(type='text' value="01/01/1944" placeholder='01/01/1944' aria-label='DOB' , disabled)
                 .row
                     .col
                         label.form-label Age
-                        input.form-control(type='text' placeholder='age' aria-label='Age' value="76", disabled="disabled")
+                        input.form-control(type='text' placeholder='age' aria-label='Age' value="76", disabled)
                     .col
                         label.form-label Gender
-                        input.form-control(type='text' value="M" placeholder='M' aria-label='Gender', disabled="disabled")
+                        input.form-control(type='text' value="M" placeholder='M' aria-label='Gender', disabled)
                 .row
                     .col
                         label.form-label Facility State
-                        input.form-control(type='text' placeholder='FL' aria-label='Facility State' value="FL", disabled="disabled")
+                        input.form-control(type='text' placeholder='FL' aria-label='Facility State' value="FL", disabled)
                     .col
                         label.form-label Facility County
-                        input.form-control(type='text' value="Hillsborough" placeholder='Hillsborough' aria-label='Facility County', disabled="disabled")
+                        input.form-control(type='text' value="Hillsborough" placeholder='Hillsborough' aria-label='Facility County', disabled)
                 .row
                     .col
                         label.form-label Facility
-                        input.form-control(type='text' value="Avante of Orlando" placeholder='Avante of Orlando' aria-label='Facility', disabled="disabled")
+                        input.form-control(type='text' value="Avante of Orlando" placeholder='Avante of Orlando' aria-label='Facility', disabled)
                 .row.mb-4
                     .col
                         label.form-label Original Address
-                        input.form-control(type='text' value="123 Main St, Tampa, FL 33615" placeholder='123 Main St, Tampa, FL 33615' aria-label='Original Address', disabled="disabled")
+                        input.form-control(type='text' value="123 Main St, Tampa, FL 33615" placeholder='123 Main St, Tampa, FL 33615' aria-label='Original Address', disabled)
 
     li.nav-item(data-bs-toggle='tooltip' data-placement='right' title='Additional Info')
         a.nav-link(href='#')

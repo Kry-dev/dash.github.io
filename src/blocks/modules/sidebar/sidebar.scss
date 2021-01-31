@@ -26,6 +26,9 @@
         position: relative;
         padding: 1rem 1rem;
         color: rgba($white, .7);
+        &.active {
+            background: rgba($white, 0.09);
+        }
         .sidenav-btn {
             color: inherit;
         }
@@ -74,12 +77,19 @@
         background: transparent;
         border: 0;
     }
-    
-    .form-control, .form-control:disabled, .form-control[readonly] {
+    .form-control {
+        border: 1px solid $white;
+        padding: 0;
+        color: $white;
+        &:focus {
+            color: $dark;
+        }
+    }
+    .form-control:disabled, .form-control[readonly] {
         background: transparent;
         border: 0;
         color: $white;
-        padding: 0;
+        cursor: text;
     }
     .form-label {
         font-size: 0.825rem;
