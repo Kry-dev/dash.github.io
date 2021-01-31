@@ -11,32 +11,32 @@ ul#sidebar.navbar-nav.navbar-sidenav.accordion.accordion-flush
         #ResidentProfile.accordion-collapse.collapse.show(data-bs-parent='#sidebar')
             .accordion-body
                 form.form.sidenav-from.is-readonly
-                    .row.mb-4
+                    .row.mb-2
                         .col
                             label.form-label SS#
                             input.form-control(type='text' placeholder='XXX-XX-6787' aria-label='SS#' value="XXX-XX-6787", disabled)
                         .col
                             label.form-label DOB
                             input.form-control(type='text' value="01/01/1944" placeholder='01/01/1944' aria-label='DOB' , disabled)
-                    .row
+                    .row.mb-2
                         .col
                             label.form-label Age
                             input.form-control(type='text' placeholder='age' aria-label='Age' value="76", disabled)
                         .col
                             label.form-label Gender
                             input.form-control(type='text' value="M" placeholder='M' aria-label='Gender', disabled)
-                    .row
+                    .row.mb-2
                         .col
                             label.form-label Facility State
                             input.form-control(type='text' placeholder='FL' aria-label='Facility State' value="FL", disabled)
                         .col
                             label.form-label Facility County
                             input.form-control(type='text' value="Hillsborough" placeholder='Hillsborough' aria-label='Facility County', disabled)
-                    .row
+                    .row.mb-2
                         .col
                             label.form-label Facility
                             input.form-control(type='text' value="Avante of Orlando" placeholder='Avante of Orlando' aria-label='Facility', disabled)
-                    .row.mb-4
+                    .row
                         .col
                             label.form-label Original Address
                             input.form-control(type='text' value="123 Main St, Tampa, FL 33615" placeholder='123 Main St, Tampa, FL 33615' aria-label='Original Address', disabled)
@@ -50,28 +50,28 @@ ul#sidebar.navbar-nav.navbar-sidenav.accordion.accordion-flush
         #AdditionalInfo.accordion-collapse.collapse( data-bs-parent='#sidebar')
             .accordion-body
                 form.form.sidenav-from.is-readonly
-                    .row.mb-4
+                    .row.mb-2
                         .col
                             label.form-label Gender:
                             input.form-control(type='text' value="---" placeholder='---' aria-label='Gender' , disabled)
                         .col
                             label.form-label Marital Status:
                             input.form-control(type='text' value="---" placeholder='---' aria-label='Marital Status' , disabled)
-                    .row
+                    .row.mb-2
                         .col
                             label.form-label Country of Birth:
                             input.form-control(type='text' value="---" placeholder='---' aria-label='Country of Birth' , disabled)
                         .col
                             label.form-label Preferred Language:
                             input.form-control(type='text' value="---" placeholder='---' aria-label='Preferred Language', disabled)
-                    .row
+                    .row.mb-2
                         .col
                             label.form-label US Citizen:
                             input.form-control(type='text' value="---" placeholder='---' aria-label='US Citizen' , disabled)
                         .col
                             label.form-label Race:
                             input.form-control(type='text' value="---" placeholder='---' aria-label='Race', disabled)
-                    .row
+                    .row.mb-2
                         .col
                             label.form-label Military:
                             input.form-control(type='text' value="---" placeholder='---' aria-label='Military', disabled)
@@ -95,7 +95,23 @@ ul#sidebar.navbar-nav.navbar-sidenav.accordion.accordion-flush
             i.fa.fa-fw.fa-pencil-square-o(aria-hidden="true")
         #ResidentStatus.accordion-collapse.collapse(data-bs-parent='#sidebar')
             .accordion-body
-                strong This is the  accordion body.
+                form.form.sidenav-from.is-readonly
+                    .row.mb-2
+                        .col
+                            label.form-label Admission Date:
+                            input.form-control(type='text' value="---" placeholder='---' aria-label='Admission Date' , disabled)
+                        .col
+                            label.form-label Next Recert Date:
+                            input.form-control(type='text' value="---" placeholder='---' aria-label='Next Recert Date' , disabled)
+                    .row
+                        .col
+                            label.form-label Discharged:
+                            input.form-control(type='text' value="---" placeholder='---' aria-label='Discharged' , disabled)
+                        .col
+                            label.form-label Deceased:
+                            input.form-control(type='text' value="---" placeholder='---' aria-label='Deceased', disabled)
+
+
     li.accordion-item
         button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#Contacts' aria-expanded='false' aria-controls='Contacts')
             i.fa.fa-fw.fa-address-book-o(aria-hidden="true")

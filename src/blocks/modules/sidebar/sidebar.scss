@@ -86,6 +86,9 @@
             background: rgba($white, .09);
             color: $white;
         }
+        &[aria-expanded="true"], &:focus {
+            box-shadow: none;
+        }
         &[aria-expanded="true"] + .sidenav-btn {
             color: $white;
             z-index: 5;
