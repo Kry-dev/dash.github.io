@@ -38,4 +38,12 @@
     .actions {
         text-align: right;
     }
+    .options {
+        .btn + .btn {
+            margin-left: .5rem;
+        }
+    }
+}
+.table-responsive {
+    border-radius: 5px;
 }

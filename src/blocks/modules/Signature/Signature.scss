@@ -1,6 +1,7 @@
 $signature-w: 400px;
 $signature-h: $signature-w / 2;
 .signature {
+    margin-bottom: 1.5rem;
     &-canvas {
         position: relative;
         width: $signature-w;

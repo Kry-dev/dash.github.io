@@ -16,12 +16,13 @@ $black:    #000;
 $blue-light: #f5f9fb;
 $blue-dark: #113150;
 $red: #e10135;
-
+$green: #0d7430;
 
 // scss-docs-start colors-map
 $colors: (
-    "bluedark":       $blue-dark,
+    "bluedark":   $blue-dark,
     "red":        $red,
+    "green":      $green,
 );
 // scss-docs-end colors-map
 
@@ -29,13 +30,15 @@ $primary:       $blue-dark;
 $bluedark:      $blue-dark;
 $danger:        $red;
 $light:         $blue-light;
+$success:       $green;
 
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
-    "primary":   $primary,
+    "primary":    $primary,
     "bluedark":   $bluedark,
     "danger":     $danger,
+    "success":    $success,
 );
 
 
