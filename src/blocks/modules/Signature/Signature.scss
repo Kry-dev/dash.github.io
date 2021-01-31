@@ -33,5 +33,8 @@ $signature-h: $signature-w / 2;
         display: inline-block;
         width: $signature-w;
         height: $signature-h;
+        #alttext-image {
+            opacity: 0;
+        }
     }
 }
