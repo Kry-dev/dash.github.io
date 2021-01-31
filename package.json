@@ -76,6 +76,7 @@
         "bootstrap": "^5.0.0-beta1",
         "font-awesome": "^4.7.0",
         "jquery": "^3.5.1",
+        "signature_pad": "^3.0.0-beta.4",
         "smart-grid": "^2.1.2"
     },
     "husky": {

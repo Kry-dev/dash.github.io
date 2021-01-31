@@ -1,0 +1,37 @@
+$signature-w: 400px;
+$signature-h: $signature-w / 2;
+.signature {
+    &-canvas {
+        position: relative;
+        width: $signature-w;
+        height: $signature-h;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        outline: .5px solid rgba($border-color, .5);
+        > canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: $signature-w;
+            height: $signature-h;
+            background-color: $white;
+        }
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 2rem;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: $border-color;
+        }
+    }
+    img {
+        display: inline-block;
+        width: $signature-w;
+        height: $signature-h;
+    }
+}

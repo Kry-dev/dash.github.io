@@ -109,7 +109,9 @@ $table-striped-bg: $blue-light;
 
 $border-radius: .5rem;
 
-
-
 $input-border-radius: .25rem;
 $form-select-border-radius: .25rem;
+
+
+// font awesome
+$fa-font-path:        "//netdna.bootstrapcdn.com/font-awesome/4.7.0/fonts" !default; // for referencing Bootstrap CDN font files directly

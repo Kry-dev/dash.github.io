@@ -1,4 +1,4 @@
 import "%modules%/header/header";
-import "%modules%/footer/footer";
+import "%modules%/Signature/Signature";
 // import "%modules%/modal/modal";
-import "%modules%/scroll-top/scroll-top";
+// import "%modules%/scroll-top/scroll-top";

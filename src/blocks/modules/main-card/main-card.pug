@@ -25,7 +25,7 @@
                         a#AuditLog-tab.nav-link(data-bs-toggle='tab' href='#AuditLog' role='tab' aria-controls='Audit Log' aria-selected='false') Audit Log
 
             #mainTabsContent.card-body.tab-content
-                    #Notes.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='Notes-tab')
+                    #Notes.tab-pane.fade(role='tabpanel' aria-labelledby='Notes-tab')
                         include ../Notes/Notes
                     #Income.tab-pane.fade(role='tabpanel' aria-labelledby='Income-tab')
                         include ../Income/Income
@@ -35,8 +35,8 @@
                         include ../Bills/Bills
                     #Legal.tab-pane.fade(role='tabpanel' aria-labelledby='Legal-tab')
                         include ../Legal/Legal
-                    #Signatures.tab-pane.fade(role='tabpanel' aria-labelledby='Signatures-tab') Signatures
-                        include ../Legal/Legal
+                    #Signatures.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='Signatures-tab')
+                        include ../Signature/Signature
                     #Documents.tab-pane.fade(role='tabpanel' aria-labelledby='Documents-tab') Documents
                     #Tasks.tab-pane.fade(role='tabpanel' aria-labelledby='Tasks-tab') Tasks
                     #FIARequests.tab-pane.fade(role='tabpanel' aria-labelledby='FIARequests-tab') FIA Requests

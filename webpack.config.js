@@ -10,8 +10,7 @@ module.exports = {
             "window.jquery": "jquery",
             "$": "jquery",
             "window.$": "jquery",
-            // "popperjs": "popperjs",
-            // "bootstrap": "bootstrap"
+            "bootstrap": "bootstrap"
         })
     ],
     
@@ -58,7 +57,7 @@ module.exports = {
     resolve: {
         alias: {
             "%modules%": path.resolve(__dirname, "src/blocks/modules"),
-            "%components%": path.resolve(__dirname, "src/blocks/components")
+            "%components%": path.resolve(__dirname, "src/blocks/components"),
         }
     }
 };
